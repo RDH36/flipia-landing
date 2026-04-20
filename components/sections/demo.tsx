@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { useLocale } from "@/lib/i18n/locale-context";
-import { Play } from "lucide-react";
 
 export function Demo() {
   const { t } = useLocale();
@@ -25,20 +24,21 @@ export function Demo() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="mx-auto mt-12 max-w-3xl"
+        className="relative mx-auto mt-12 w-full max-w-[320px]"
       >
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/5 via-primary-container-bg to-p1-bg shadow-[0_20px_60px_rgba(59,48,158,0.1)]">
-          {/* Video placeholder — replace with actual video/embed */}
-          <div className="flex aspect-video flex-col items-center justify-center gap-4">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 transition-transform hover:scale-110">
-              <Play className="h-10 w-10 text-primary" />
-            </div>
-            <p className="font-display text-lg font-semibold text-text-secondary">
-              {t.demo.placeholder}
-            </p>
-          </div>
+        <div className="pointer-events-none absolute -inset-12 -z-10 rounded-[3rem] bg-gradient-to-br from-primary/20 via-primary-container-bg to-p1-bg/50 blur-3xl" />
+        <div className="relative overflow-hidden rounded-[2.5rem] bg-text-primary p-2 shadow-[0_30px_80px_rgba(59,48,158,0.2)] ring-1 ring-black/5">
+          <video
+            src="/flipia-game-play.mp4"
+            className="aspect-[9/19.5] w-full rounded-[2rem] bg-black object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          />
         </div>
-        <p className="mt-4 text-center font-body text-sm text-text-secondary">
+        <p className="mt-6 text-center font-body text-sm text-text-secondary">
           {t.demo.caption}
         </p>
       </motion.div>

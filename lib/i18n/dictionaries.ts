@@ -93,9 +93,8 @@ export const dictionaries = {
       titleAccent: " en action",
       subtitle:
         "Regarde comment une partie se déroule — de la première carte retournée au comeback Tornade.",
-      placeholder: "Démo vidéo bientôt disponible",
       caption:
-        "Gameplay réel capturé sur l'app — Solo mode contre AlphaMemory",
+        "Gameplay réel capturé sur l'app — Duel 1v1 en temps réel contre un vrai joueur",
     },
     faq: {
       title: "Questions fréquentes",
@@ -222,9 +221,8 @@ export const dictionaries = {
       titleAccent: " in action",
       subtitle:
         "Watch how a game unfolds — from the first card flip to the Tornado comeback.",
-      placeholder: "Video demo coming soon",
       caption:
-        "Real gameplay captured in-app — Solo mode vs AlphaMemory",
+        "Real gameplay captured in-app — Real-time 1v1 duel against a real player",
     },
     faq: {
       title: "Frequently asked questions",
