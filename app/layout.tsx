@@ -20,7 +20,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Flipia — Retourne. Mémorise. Domine.",
   description:
-    "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Défie tes amis ou affronte des IA redoutables. Bientôt sur Android.",
+    "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Défie tes amis ou affronte des IA redoutables. Disponible sur Android.",
   keywords: [
     "flipia",
     "memory game",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flipia — Retourne. Mémorise. Domine.",
     description:
-      "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Bientôt sur Android.",
+      "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Disponible sur Android.",
     type: "website",
   },
 };

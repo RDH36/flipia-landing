@@ -5,6 +5,8 @@ import { useLocale } from "@/lib/i18n/locale-context";
 import { Badge } from "@/components/ui/badge";
 import { Sparkles, Gamepad2, Smartphone } from "lucide-react";
 import { HeroGameMockup } from "./game-mockup";
+import { GooglePlayIcon } from "@/components/ui/google-play-icon";
+import { PLAY_STORE_URL } from "@/lib/constants";
 
 export function Hero() {
   const { t } = useLocale();
@@ -61,10 +63,12 @@ export function Hero() {
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
           >
             <a
-              href="#cta"
-              className="inline-flex items-center rounded-full bg-primary px-8 py-3 font-display text-base font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:scale-105 hover:bg-primary-container"
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-primary px-8 py-3 font-display text-base font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:scale-105 hover:bg-primary-container"
             >
-              <Sparkles className="mr-2 h-5 w-5" />
+              <GooglePlayIcon className="mr-2 h-5 w-5" />
               {t.hero.cta}
             </a>
             <p className="text-sm text-text-secondary">{t.hero.micro}</p>

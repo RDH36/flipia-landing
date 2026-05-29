@@ -29,7 +29,7 @@ const testimonials = [
 ];
 
 const trustIndicators = [
-  { icon: Smartphone, label: "iOS & Android" },
+  { icon: Smartphone, label: "Sur Android" },
   { icon: Wifi, label: "Temps réel" },
   { icon: Shield, label: "Gratuit, sans P2W" },
   { icon: Hand, label: "Retour haptique" },

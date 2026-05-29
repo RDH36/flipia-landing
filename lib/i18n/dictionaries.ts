@@ -3,22 +3,22 @@ export type Locale = "fr" | "en";
 export const dictionaries = {
   fr: {
     nav: {
-      cta: "Rejoindre la bêta",
+      cta: "Télécharger",
     },
     hero: {
-      badge: "Bientôt disponible — Rejoins la bêta",
+      badge: "Disponible maintenant sur Android",
       h1_1: "Retourne.",
       h1_2: "Mémorise.",
       h1_3: "Domine.",
       subtitle:
         "Le premier jeu de mémoire 1v1 avec une mécanique qui change tout : la Tornade. Défie tes amis ou affronte des IA redoutables.",
-      cta: "Rejoindre la bêta",
-      micro: "Bientôt sur Android — iOS arrive ensuite",
+      cta: "Télécharger sur Google Play",
+      micro: "Disponible sur Android — iOS arrive bientôt",
       social: "Rejoins les premiers joueurs en avant-première",
       stats: {
-        beta: { value: "Bêta", label: "Bientôt" },
+        beta: { value: "Live", label: "Sur Google Play" },
         modes: { value: "3", label: "Modes de jeu" },
-        platforms: { value: "Android", label: "D'abord sur Android" },
+        platforms: { value: "Android", label: "Disponible maintenant" },
       },
     },
     problem: {
@@ -107,9 +107,9 @@ export const dictionaries = {
       q4: "Les IA sont-elles vraiment difficiles ?",
       a4: "BabyBot retient 20% des cartes. NekoFlash en retient 55%. AlphaMemory retient 85% — il est presque parfait. Bonne chance.",
       q5: "Sur quels appareils puis-je jouer ?",
-      a5: "D'abord sur Android, puis iOS. L'app est construite avec Expo/React Native pour une expérience native sur les deux plateformes.",
-      q6: "Quand sort Flipia ?",
-      a6: "Flipia est actuellement en bêta fermée. Inscris-toi pour être notifié dès la sortie officielle.",
+      a5: "Disponible sur Android dès maintenant, iOS arrive ensuite. L'app est construite avec Expo/React Native pour une expérience native sur les deux plateformes.",
+      q6: "Comment télécharger Flipia ?",
+      a6: "Flipia est disponible gratuitement dès maintenant sur le Google Play Store. La version iOS arrive bientôt.",
       q7: "Y aura-t-il des mises à jour ?",
       a7: "Oui. Mode Ranked avec ELO, classements saisonniers, succès et badges arrivent prochainement.",
     },
@@ -118,9 +118,9 @@ export const dictionaries = {
       titleAccent: " la meilleure",
       titleEnd: " ?",
       subtitle:
-        "Inscris-toi à la bêta, sois parmi les premiers à jouer, et montre au monde de quoi tu es capable.",
-      button: "Rejoindre la bêta",
-      trust: "Gratuit · Bientôt sur Android, puis iOS",
+        "Télécharge Flipia gratuitement, affronte tes amis et les IA, et montre au monde de quoi tu es capable.",
+      button: "Télécharger sur Google Play",
+      trust: "Gratuit · Disponible sur Android · iOS bientôt",
     },
     footer: {
       rights: "Tous droits réservés.",
@@ -131,22 +131,22 @@ export const dictionaries = {
   },
   en: {
     nav: {
-      cta: "Join the beta",
+      cta: "Download",
     },
     hero: {
-      badge: "Coming soon — Join the beta",
+      badge: "Now available on Android",
       h1_1: "Flip.",
       h1_2: "Memorize.",
       h1_3: "Dominate.",
       subtitle:
         "The first 1v1 memory game with a mechanic that changes everything: the Tornado. Challenge friends or face ruthless AI opponents.",
-      cta: "Join the beta",
-      micro: "Coming soon on Android — iOS to follow",
+      cta: "Get it on Google Play",
+      micro: "Available on Android — iOS coming soon",
       social: "Join the first players in early access",
       stats: {
-        beta: { value: "Beta", label: "Coming soon" },
+        beta: { value: "Live", label: "On Google Play" },
         modes: { value: "3", label: "Game modes" },
-        platforms: { value: "Android", label: "Android first" },
+        platforms: { value: "Android", label: "Available now" },
       },
     },
     problem: {
@@ -235,9 +235,9 @@ export const dictionaries = {
       q4: "Are the AIs really hard?",
       a4: "BabyBot remembers 20% of cards. NekoFlash remembers 55%. AlphaMemory remembers 85% — nearly perfect. Good luck.",
       q5: "What devices can I play on?",
-      a5: "Android first, then iOS. The app is built with Expo/React Native for a native experience on both platforms.",
-      q6: "When does Flipia launch?",
-      a6: "Flipia is currently in closed beta. Sign up to be notified when it officially launches.",
+      a5: "Available on Android right now, with iOS to follow. The app is built with Expo/React Native for a native experience on both platforms.",
+      q6: "How do I download Flipia?",
+      a6: "Flipia is available for free right now on the Google Play Store. The iOS version is coming soon.",
       q7: "Will there be updates?",
       a7: "Yes. Ranked mode with ELO, seasonal leaderboards, achievements and badges are coming soon.",
     },
@@ -246,9 +246,9 @@ export const dictionaries = {
       titleAccent: " the best",
       titleEnd: "?",
       subtitle:
-        "Sign up for the beta, be among the first to play, and show the world what you're made of.",
-      button: "Join the beta",
-      trust: "Free · Coming soon on Android, then iOS",
+        "Download Flipia for free, take on your friends and the AI, and show the world what you're made of.",
+      button: "Get it on Google Play",
+      trust: "Free · Available on Android · iOS soon",
     },
     footer: {
       rights: "All rights reserved.",

@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useLocale } from "@/lib/i18n/locale-context";
 import { cn } from "@/lib/utils";
-import { Sparkles } from "lucide-react";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
+import { GooglePlayIcon } from "@/components/ui/google-play-icon";
+import { PLAY_STORE_URL } from "@/lib/constants";
 
 export function Navbar() {
   const { t } = useLocale();
@@ -40,10 +41,12 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href="#cta"
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center rounded-full bg-primary px-5 py-2.5 font-display text-sm font-semibold text-white transition-colors hover:bg-primary-container"
           >
-            <Sparkles className="mr-2 h-4 w-4" />
+            <GooglePlayIcon className="mr-2 h-4 w-4" />
             {t.nav.cta}
           </a>
         </div>

@@ -9,7 +9,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Sparkles } from "lucide-react";
+import { GooglePlayIcon } from "@/components/ui/google-play-icon";
+import { PLAY_STORE_URL } from "@/lib/constants";
 
 export function FinalSection() {
   const { t } = useLocale();
@@ -70,10 +71,12 @@ export function FinalSection() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-4">
             <a
-              href="#"
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-primary px-10 py-3 font-display text-base font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:bg-primary-container"
             >
-              <Sparkles className="mr-2 h-5 w-5" />
+              <GooglePlayIcon className="mr-2 h-5 w-5" />
               {t.cta.button}
             </a>
             <p className="text-sm text-text-secondary">{t.cta.trust}</p>
