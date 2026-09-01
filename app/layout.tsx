@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fredoka, Nunito, Geist } from "next/font/google";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
+import { baseMetadata } from "@/lib/seo/site";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -17,24 +19,11 @@ const nunito = Nunito({
   weight: ["400", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Flipia — Retourne. Mémorise. Domine.",
-  description:
-    "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Défie tes amis ou affronte des IA redoutables. Disponible sur Android.",
-  keywords: [
-    "flipia",
-    "memory game",
-    "jeu de mémoire",
-    "1v1",
-    "tornado",
-    "mobile game",
-  ],
-  openGraph: {
-    title: "Flipia — Retourne. Mémorise. Domine.",
-    description:
-      "Le premier jeu de mémoire 1v1 avec la mécanique Tornade. Disponible sur Android.",
-    type: "website",
-  },
+export const metadata: Metadata = baseMetadata;
+
+export const viewport: Viewport = {
+  themeColor: "#3B309E",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -49,6 +38,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <Analytics />
       </body>
     </html>
   );

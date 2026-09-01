@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useLocale } from "@/lib/i18n/locale-context";
+import { AUTHOR_NAME, AUTHOR_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export function Footer() {
   const { t } = useLocale();
@@ -15,17 +17,33 @@ export function Footer() {
             Flipia
           </span>
         </div>
-        <p className="text-sm text-text-secondary">
-          &copy; {new Date().getFullYear()} Flipia. {t.footer.rights}
-        </p>
+        <div className="flex flex-col items-center gap-1 text-sm text-text-secondary">
+          <p>
+            &copy; {new Date().getFullYear()} Flipia. {t.footer.rights}
+          </p>
+          <p>
+            By{" "}
+            <a
+              href={AUTHOR_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold transition-colors hover:text-primary"
+            >
+              {AUTHOR_NAME}
+            </a>
+          </p>
+        </div>
         <div className="flex gap-6 text-sm text-text-secondary">
-          <a href="/privacy" className="transition-colors hover:text-primary">
+          <Link href="/privacy" className="transition-colors hover:text-primary">
             {t.footer.privacy}
-          </a>
-          <a href="/terms" className="transition-colors hover:text-primary">
+          </Link>
+          <Link href="/terms" className="transition-colors hover:text-primary">
             {t.footer.terms}
-          </a>
-          <a href="#" className="transition-colors hover:text-primary">
+          </Link>
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="transition-colors hover:text-primary"
+          >
             {t.footer.contact}
           </a>
         </div>
